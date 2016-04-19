@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "dashboard",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,20 +8,29 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "browserify": "^9.0.3",
-    "gulp": "^3.8.11",
-    "gulp-concat": "^2.5.2",
-    "gulp-react": "^3.0.1",
-    "gulp-sass": "^2.0.1",
-    "gulp-server-livereload": "1.3.0",
-    "gulp-util": "^3.0.4",
-    "gulp-watch": "^4.2.4",
-    "node-notifier": "^4.2.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "reactify": "^1.1.0",
+    "browserify": "^9.0.8",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-react": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-server-livereload": "^1.3.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "node-notifier": "^4.5.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^2.4.0"
+    "watchify": "^2.6.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "ReactStarter\r ====",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikin88/Dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rikin88/Dashboard/issues"
+  },
+  "homepage": "https://github.com/rikin88/Dashboard#readme"
 }
