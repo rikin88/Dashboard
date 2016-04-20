@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() { 
 		return (
-			<div className="col-sm-20 col-md-6 " >
+			<div className="col-sm-6 col-md-6 " >
 			    <div className={"thumbnail " + this.props.messages}>
 			      <h4>Messages</h4>
 			      <div className="caption">
