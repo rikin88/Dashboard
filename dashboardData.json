@@ -1,46 +1,50 @@
 {
+  "NavBar": [
+    {}
+  ],
+
   "ActionItems": [
     {
       "actionText": "3 New Files for Download",
       "actionURL": "https://www.google.com/"
     },
     {
-      "Action Text": "2 New Files for Download",
+      "actionText": "2 New Files for Download",
       "Action URL": "https://portal.jpmchase.net/"
     },
     {
-      "Action Text": "3 New Files for Download",
+      "actionText": "3 New Files for Download",
       "Action URL": "https://www.yahoo.com/"
     }
   ],
   "Alerts": [
     {
       "alertText": "Transaction Flags on 04/22/2016",
-      "alertCount" : 2
+      "alertCount" : 2,
       "alertURL": "https://www.yahoo.com/"
     },
     {
-      "Alerts Text": "Single Transaction Amount",
-      "Alerts URL": "https://www.yahoo.com/"
+      "alertText": "Single Transaction Amount",
+      "alertURL": "https://www.yahoo.com/"
     },
     {
-      "Alerts Text": "Questionable MCC's",
-      "Alerts URL": "https://www.yahoo.com/"
+      "alertText": "Questionable MCC's",
+      "alertURL": "https://www.yahoo.com/"
     }
   ],
   "Messages": [
     {
       "messageDate": "April 9, 2016 10:45am",
-      "messageText": "Payment Posted Sucessfully"
+      "messageText": "Payment Posted Sucessfully",
       "isNew" : true
     },
     {
-      "Message Date": "April 19, 2016 04:45pm",
-      "Message Text": "The Hackslahers are coming up with Innovation"
+      "messageDate": "April 19, 2016 04:45pm",
+      "messageText": "The Hackslahers are coming up with Innovation"
     },
     {
-      "Message Date": "April 9, 2016 10:45am",
-      "Message Text": "Congratulations, You have won the 2016 chase hackathon"
+      "messageDate": "April 9, 2016 10:45am",
+      "messageText": "Congratulations, You have won the 2016 chase hackathon"
     }
   ],
   "Accounts": [
@@ -51,13 +55,13 @@
       "Account Number": "1234567890123456",
       "CardType": "Purchasing",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "10000.00",
         "CurrentBalance": "2500 0",
         "AvailableCredit": "7,500"
       },
       "Payments": {
-        "Recent Transactions": "10",
+        "RecentTransactions": "10",
         "Transaction Amount": "$300",
         "Authoriizations/Declines": "2",
         "Last Statement Date": "April 12,2016",

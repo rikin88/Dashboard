@@ -1,20 +1,20 @@
-
 var React = require('react');
 
 module.exports = React.createClass({
   render: function() {
 
     return (
-      <div className="col-md-6">
-      <div className="panel panel-info">
+      <div className="col-md-12">
+      <div className={"panel panel-info "+ this.props.styling}>
         <div className="panel-heading">
-          <h3 className="panel-title">Alerts</h3>
+          <h3 className="panel-title">Messages</h3>
         </div>
         <div className="panel-body">
         </div>
           <ul>
-            {this.props.alertList.map(function(alerts) {
-              return <ListItemWrapper data={alerts.alertsText}/>;
+          
+            {this.props.msgList.map(function(msg) {
+              return <ListItemWrapper data={msg.messageText}/>;
             })
             }
           </ul>
@@ -26,6 +26,6 @@ module.exports = React.createClass({
 
 var ListItemWrapper = React.createClass({
   render: function() {
-    return <li><a>{this.props.data}</a></li>;
+    return <li>{this.props.data}</li>;
   }
 });
