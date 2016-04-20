@@ -1,8 +1,8 @@
+
 var React = require('react'); 
  var ActionItems = require('./actionItems') 
  var Alerts = require('./alerts') 
  var Message = require('./messages') 
- 
  
  module.exports = React.createClass({ 
  	render: function() {  

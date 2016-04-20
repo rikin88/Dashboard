@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom')
 var Menu = require('./menu')
 var LeftSide = require('./leftSide')
 var Dashboard = require('./dashboard')
+
 var DashBoardData =require('../dashboard2.json')
 
 var PageHeader = React.createClass({
@@ -31,6 +32,7 @@ var PageHeader = React.createClass({
         </button>
 
       </div>
+
       );
     }
   });
@@ -42,7 +44,10 @@ var PageHeader = React.createClass({
   };
 
   // React, please render this class
+
   var element = React.createElement(WelcomePage, options);
 
+
   // React, after you render this class, please place it in my body tag
-  ReactDOM.render(element, document.body);
+  ReactDOM.render(element, document.getElementById('container'));
+

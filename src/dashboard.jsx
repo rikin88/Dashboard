@@ -1,4 +1,5 @@
 var React = require('react');
+
 var CreditSummary = require('./creditInfo') 
 var Payments = require('./payment') 
 var Transaction = require('./transaction') 
