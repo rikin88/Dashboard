@@ -5,7 +5,7 @@ module.exports = React.createClass({
 		return (
 			  <div className="col-sm-10 col-md-3">
 			    <div className="thumbnail">
-			      <h4>Panel 2</h4>
+			      <h4>Panel 1</h4>
 			      <div className="caption">
 			        <h3>Thumbnail label</h3>
 			        <p>This </p>

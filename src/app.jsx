@@ -1,17 +1,18 @@
 var React = require('react');
 var ReactDOM = require('react-dom')
 var Menu = require('./menu')
+var LeftSide = require('./leftSide')
+var Dashboard = require('./dashboard')
+//var ActionItems = require('./actionItems')
+//var Alerts = require('./alerts')
 
- var Badge = React.createClass({
+ var App = React.createClass({
     render: function() {
       return( <div>
         <Menu data="NewSection"/>
-
-        <button className="btn btn-primary" type="button">
-          {this.props.title}<span className="badge">{this.props.number}</span>
-        </button>
-
-      </div>
+        <LeftSide messages="messages" />
+        
+      </div> 
       );
     }
   });
@@ -23,7 +24,8 @@ var Menu = require('./menu')
   };
 
   // React, please render this class
-  var element = React.createElement(Badge, options);
+  var element = React.createElement(App, options);
 
   // React, after you render this class, please place it in my body tag
-  ReactDOM.render(element, document.body);
+  ReactDOM.render(element, document.getElementById('container'));
+
