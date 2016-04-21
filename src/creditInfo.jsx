@@ -1,6 +1,32 @@
 var React = require('react');
 
 module.exports = React.createClass({
+
+  getInitialState: function(data) {
+
+      return {}
+    
+  },
+
+  componentWillMount: function() {
+    //var data = this.props.paymentData;
+    this.loadCreditInfo();
+  },
+
+  loadCreditInfo: function(){
+    
+      {this.props.creditInfo.map(function(account){
+        if(account.AccountNumber === this.props.acctno)
+        {
+          this.setState({
+            creditLimit:account.CreditSummary.CreditLimit, 
+            currentBal:account.CreditSummary.CurrentBalance,
+            availableCredit:account.CreditSummary.AvailableCredit});
+            }
+        }.bind(this)
+      )}
+
+  },
   render: function() {
 
     return (
@@ -10,14 +36,13 @@ module.exports = React.createClass({
           <h3 className="panel-title">Credit Summary</h3>
         </div>
         <div className="panel-body">
-    Credit
-          <ul>
-          
-            {this.props.creditInfo.map(function(account) {
-              return <ListItemWrapper data={account.CreditSummary.CreditLimit}/>;
-            })
-            }
-          </ul>
+          <div>
+             <center>
+                  <text>Credit Limit:</text><br/><span>{this.state.creditLimit}</span><br/>
+                  <text>Available Balance:</text><br/><span>{this.state.availableCredit}</span><br/>
+                  <text>Current Amount:</text><br/><span>{this.state.currentBal}</span>
+              </center>
+          </div>
 
       </div>
       </div>

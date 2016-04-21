@@ -3,27 +3,23 @@ var React = require('react');
 module.exports = React.createClass({
   getInitialState: function(data) {
 
-      console.log("Here");
-
-      return {
-        
-      }
+      return {}
+    
   },
 
-  
-
   componentWillMount: function() {
-    var data = this.props.paymentData;
+    //var data = this.props.paymentData;
     this.loadPaymentInfo();
   },
 
   loadPaymentInfo: function(){
-    this.setState({paymentAmt:453});
-      {this.props.paymentData.map(function(pay){
-        if(pay.AccountNumber === this.props.acctno)
+
+      {this.props.paymentData.map(function(account){
+        if(account.AccountNumber === this.props.acctno)
         {
-          this.setState({paymentAmt:pay.Payments.paymentAmount, 
-          paymentDate:pay.Payments.paymentDate});
+          this.setState({
+            paymentAmt:account.Payments.paymentAmount, 
+            paymentDate:account.Payments.paymentDate});
         }
       }.bind(this)
       )}
@@ -39,11 +35,10 @@ module.exports = React.createClass({
         </div>
         <div className="panel-body">
             <div>
-             <center>
-                  <text>Payment Due Date: </text><br/><span>{this.state.paymentDate}</span><br/>
-                  <text>Payment Due Amount: </text><br/><span>{this.state.paymentAmt}</span>
+              <center>
+                  <text>Payment Due: <br/> <small> due </small></text><span>{this.state.paymentDate}</span><br/>
+                  <text>Payment Due Amount:</text><br/><span>{this.state.paymentAmt}</span>
               </center>
-
             </div>
         </div>
       </div>
