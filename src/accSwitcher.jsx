@@ -5,23 +5,25 @@ module.exports = React.createClass({
 
     return (
     <div className="col-sm-12">
-
       <div className="dropdown">
         <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
           Switcher <span className="caret"></span></button>
-          <ul className="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Transactions</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Text1</a></li>
+          <ul className="dropdown-menu">         
+            {this.props.switcherData.map(function(account) {
+              return <ListItemWrapper data={account}/>;
+            })
+            }
           </ul>
       </div>
-    
     </div>
-    );
+    );            
   }
 });
 
-
+var ListItemWrapper = React.createClass({
+  render: function() {
+    return <li><a>{this.props.data.firstName}&nbsp;{this.props.data.middleInitial}&nbsp;{this.props.data.lastName}</a></li>;
+  }
+});
 
 
