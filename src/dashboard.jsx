@@ -23,13 +23,17 @@ module.exports = React.createClass({
           <br/>
           <div className="row"> 
             <CreditSummary creditInfo={this.props.jsonData.Accounts} acctno="1234567890123451" styleInfo={this.props.podStyleInfo}/> 
-            <Payments paymentData={this.props.jsonData.Accounts} acctno="1234567890123451" styleInfo={this.props.podStyleInfo}/> 
+            
           </div>
 
           <div className="row"> 
             <Transaction txnInfo={this.props.jsonData.Accounts} acctno="1234567890123451" styleInfo={this.props.podStyleInfo}/> 
             <Statement statementInfo={this.props.jsonData.Accounts} acctno="1234567890123451" styleInfo={this.props.podStyleInfo}/> 
           </div> 
+
+          <div className="row">
+            <Payments paymentData={this.props.jsonData.Accounts} acctno="1234567890123451" styleInfo={this.props.podStyleInfo}/> 
+          </div>
         </div>
          
       </div>
