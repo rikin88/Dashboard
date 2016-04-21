@@ -8,7 +8,7 @@ module.exports = React.createClass({
   },
 
   componentWillMount: function() {
-    //var data = this.props.paymentData;
+    
     this.loadStatementInfo();
   },
 
