@@ -18,7 +18,7 @@ module.exports = React.createClass({
         </div>
         <div className="panel-body">
           <div className="row"> 
-            <AccSwitcher/>    
+            <AccSwitcher switcherData={this.props.jsonData.Accounts}/>    
           </div>
           <br/>
           <div className="row"> 

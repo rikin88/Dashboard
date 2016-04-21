@@ -20,7 +20,7 @@ var PageHeader = React.createClass({
     render: function() {
       return( <div>
         <PageHeader/>
-        <Menu data="Chris"/>
+        <Menu/><br/>
         <div className="col-sm-10 col-md-6">
         <LeftSide jsonData={DashBoardData} styleInfo="messages"/>
         </div>
