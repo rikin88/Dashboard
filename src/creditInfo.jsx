@@ -11,11 +11,23 @@ module.exports = React.createClass({
         </div>
         <div className="panel-body">
     Credit
-         
+          <ul>
+          
+            {this.props.creditInfo.map(function(account) {
+              return <ListItemWrapper data={account.CreditSummary.CreditLimit}/>;
+            })
+            }
+          </ul>
 
       </div>
       </div>
       </div>
     );
+  }
+});
+
+var ListItemWrapper = React.createClass({
+  render: function() {
+    return <li>{this.props.data}</li>;
   }
 });

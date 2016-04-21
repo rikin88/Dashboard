@@ -62,10 +62,10 @@
       "firstName": "Marina",
       "lastName": "Stolyarov",
       "middleInitial": "S",
-      "Account Number": "1234567890123451",
+      "AccountNumber": "1234567890123451",
       "CardType": "Purchasing",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$10000.00",
         "CurrentBalance": "$2,500",
         "AvailableCredit": "$7,500"
@@ -103,10 +103,10 @@
       "firstName": "Avani",
       "lastName": "Vora",
       "middleInitial": "X",
-      "Account Number": "1234567890123452",
+      "AccountNumber": "1234567890123452",
       "CardType": "Commercial",
       "AccountStatus": "Active",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$20000.00",
         "CurrentBalance": "$3500",
         "AvailableCredit": "$16,500"
@@ -144,10 +144,10 @@
       "firstName": "Rikin",
       "lastName": "Asher",
       "middleInitial": "X1",
-      "Account Number": "1234567890123453",
+      "AccountNumber": "1234567890123453",
       "CardType": "Purchase",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$10,000.00",
         "CurrentBalance": "$3,500 0",
         "AvailableCredit": "$6,500"
@@ -185,10 +185,10 @@
       "firstName": "Rahul",
       "lastName": "Kumar",
       "middleInitial": "X3",
-      "Account Number": "1234567890123459",
+      "AccountNumber": "1234567890123459",
       "CardType": "Purchase",
       "AccountStatus": "Active",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$50,000.00",
         "CurrentBalance": "$9,500 0",
         "AvailableCredit": "$41,500"
@@ -226,10 +226,10 @@
       "firstName": "Selena",
       "lastName": "Gomez",
       "middleInitial": "U",
-      "Account Number": "1234567890123454",
+      "AccountNumber": "1234567890123454",
       "CardType": "Purchase",
       "AccountStatus": "Active",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$9,000.00",
         "CurrentBalance": "$1,500",
         "AvailableCredit": "$8,000"
@@ -267,10 +267,10 @@
       "firstName": "Demi",
       "lastName": "Lovato",
       "middleInitial": "C",
-      "Account Number": "1234567890123455",
+      "AccountNumber": "1234567890123455",
       "CardType": "Commercial",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$4,000.00",
         "CurrentBalance": "$1,500",
         "AvailableCredit": "$2,500"
@@ -308,10 +308,10 @@
       "firstName": "Taylor",
       "lastName": "Swift",
       "middleInitial": "K",
-      "Account Number": "1234567890123456",
+      "AccountNumber": "1234567890123456",
       "CardType": "Commercial",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$12,000.00",
         "CurrentBalance": "$4,000",
         "AvailableCredit": "$8,000"
@@ -349,10 +349,10 @@
       "firstName": "Donald",
       "lastName": "Trump",
       "middleInitial": "R",
-      "Account Number": "1234567890123457",
+      "AccountNumber": "1234567890123457",
       "CardType": "Commercial",
       "AccountStatus": "New",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$2,000.00",
         "CurrentBalance": "$1,000",
         "AvailableCredit": "$1,000"
@@ -390,10 +390,10 @@
       "firstName": "Hilary",
       "lastName": "Clinton",
       "middleInitial": "D",
-      "Account Number": "1234567890123458",
+      "AccountNumber": "1234567890123458",
       "CardType": "Commercial",
       "AccountStatus": "Active",
-      "Credit Summary": {
+      "CreditSummary": {
         "CreditLimit": "$20,000.00",
         "CurrentBalance": "$10,000",
         "AvailableCredit": "$10,000"
