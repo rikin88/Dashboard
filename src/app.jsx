@@ -22,10 +22,10 @@ var PageHeader = React.createClass({
         <PageHeader/>
         <Menu/><br/>
         <div className="col-sm-10 col-md-6">
-        <LeftSide jsonData={DashBoardData} styleInfo="messages"/>
+        <LeftSide jsonData={DashBoardData} />
         </div>
         <div className="col-sm-10 col-md-6">
-        <Dashboard jsonData={DashBoardData} styleInfo="dashBoard" podStyleInfo="infoPods"/>
+        <Dashboard jsonData={DashBoardData} podStyleInfo="infoPods"/>
         </div>
       </div>
 

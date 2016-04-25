@@ -29,10 +29,14 @@ module.exports = React.createClass({
 
   },
   render: function() {
-
+    var transactionsPanelStyle = {
+      height: "210px", 
+      backgroundColor: "white"
+    };
+    
     return (
     <div className="col-sm-6">
-      <div className={"panel panel-info "+ this.props.styleInfo}>
+      <div className={"panel panel-info "} style={transactionsPanelStyle}>
         <div className="panel-heading">
           <h3 className="panel-title">Transaction Information</h3>
         </div>
