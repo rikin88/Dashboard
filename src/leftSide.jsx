@@ -3,6 +3,8 @@ var React = require('react');
  var ActionItems = require('./actionItems') 
  var Alerts = require('./alerts') 
  var Message = require('./messages') 
+ var RecentTrends = require('./recentTrends')
+ 
  
  module.exports = React.createClass({ 
  	render: function() {  
@@ -15,6 +17,9 @@ var React = require('react');
  				<div className="row"> 
  				  <Message msgList={this.props.jsonData.Messages} styling={this.props.styleInfo}/> 
 				</div> 
+				<div className="row">
+				  <RecentTrends />
+				</div>
 
 			</div> 
  		); 

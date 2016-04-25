@@ -10,10 +10,11 @@ module.exports = React.createClass({
       }
     },
 
-  loadData: function(fname){
+  loadData: function(info){
 
-    console.log("alerts: " + fname);
-    this.setState({switcherText: fname})
+    this.setState({
+      "switcherText": info.fname + " " + info.lname
+    })
 
   },
 
@@ -40,20 +41,18 @@ module.exports = React.createClass({
 
 var ListItemWrapper = React.createClass({
 
-  propTypes: {
-    updateSwitcher: React.PropTypes.func
-  },
-
-  changeHandler: function() {
-    /*if(typeOf this.props.onChange === 'function'){
-      this.props.onChange(fname);
-    }*/
-    console.log("asdfasfdasfd ");
-    this.props.updateSwitcher("123");
+  changeHandler: function(info) {
+    this.props.updateSwitcher(info);
   },
 
   render: function() {
-  var fname=this.props.data.firstName;
-    return <li><a onClick={this.changeHandler}>{fname}</a></li>;
+    var info = {
+      "fname" : this.props.data.firstName,
+      "lname" : this.props.data.lastName,
+      "accountNumber" : this.props.data.AccountNumber,
+      "accountStatus" : this.props.data.AccountStatus
+    }
+
+    return <li><a onClick={this.changeHandler.bind(this, info)}>{info.fname}&nbsp;{info.lname}&nbsp;({info.accountNumber})&nbsp;&nbsp;|&nbsp;{info.accountStatus}</a></li>;
   }
 });

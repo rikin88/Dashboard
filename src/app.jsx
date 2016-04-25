@@ -27,10 +27,6 @@ var PageHeader = React.createClass({
         <div className="col-sm-10 col-md-6">
         <Dashboard jsonData={DashBoardData} styleInfo="dashBoard" podStyleInfo="infoPods"/>
         </div>
-        <button className="btn btn-primary" type="button">
-          {this.props.title}<span className="badge">{this.props.number}</span>
-        </button>
-
       </div>
 
       );

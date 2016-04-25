@@ -14,7 +14,7 @@ module.exports = React.createClass({
     <div>
       <div className={"panel panel-info " +this.props.styleInfo}>
         <div className="panel-heading">
-          <h3 className="panel-title">Dashboard</h3>
+          <h3 className="panel-title">Account Information</h3>
         </div>
         <div className="panel-body">
           <div className="row"> 

@@ -1,0 +1,100 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+  <div id="container" class="container">
+  </div>
+  <script type="text/jsx" >
+  	// var Parent = React.createClass({
+  	// 	getInitialState : function() {
+  	// 		return {
+  	// 			test: "fail"
+  	// 		}
+  	// 	},
+
+  	// 	updateOnChange: function(value) {
+  	// 		this.setState({test: value})
+  	// 	},
+
+  	// 	render: function() {
+  	// 		return (
+  	// 			<div><Dropdown onValueChange={this.updateOnChange} />
+  	// 				<p>{this.state.test}</p>
+  	// 			</div>
+  	// 		);
+  	// 	}
+
+  	// });
+
+  	// var DropDown = React.createClass({
+  	// 	getInitialState: function() {
+  	// 		return {
+  	// 			value: "fail"
+  	// 		};
+  	// 	},
+  	// 	onChangeHandler: function(e) {
+  	// 		var self = this;
+  	// 		this.setState({value: e.target.value}, function() {
+  	// 			self.props.onValueChange(self.state.value)
+  	// 		});
+  	// 	},
+  	// 	render: function() {
+  	// 		return (
+  	// 			<select onChange={this.onChangeHandler} value={this.state.value} >
+  	// 				<option value="1">1</option>
+  	// 				<option value="2">2</option>
+  	// 			</$select>
+  	// 		);
+  	// 	}
+  	// });
+
+  	// React.render(<Parent />, document.getElementById('container'));
+  </script>
+
+  <script>
+
+  	//example 1
+  	// var user = {
+  	// 	tournament: "The Masters",
+  	// 	data: [
+  	// 		{ name: "T. Woods", age: 37 },
+  	// 		{ name: "J. Spieth", age: 25 }
+  	// 	],
+  	// 	clickHandler: function(event) {
+  	// 		var thisUserObj = this;
+  	// 		this.data.forEach(function(person) {
+  	// 			console.log(person.name + ' is playing at ' + thisUserObj.tournament);
+  	// 		});
+  	// 	}
+  	// }
+
+  	// user.clickHandler();
+
+  	//example 2
+  	var data = [
+  		{name: "Tom Smith" , age: 37},
+  		{name: "Pavel D", age: 39}
+  	];
+
+  	var user = {
+  		data: [
+  			{ name: "T. Woods", age: 37 },
+  	 		{ name: "J. Spieth", age: 25 }
+  		],
+  		showData: function(event) {
+  			var randomNum = ((Math.random () * 2 | 0) + 1) - 1;
+  			console.log(this.data[randomNum].name + " " + this.data[randomNum].age);
+  		}
+  	}
+
+  	var showUserData = user.showData.bind(user);
+  	showUserData();
+
+
+  </script>
+
+</body>
+

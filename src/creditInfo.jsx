@@ -11,21 +11,21 @@ module.exports = React.createClass({
         value: 10000,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Red"
+        label: "Credit Limit"
         },
         {
             value: 7500,
             color: "#46BFBD",
             highlight: "#5AD3D1",
-            label: "Green"
+            label: "Available Balance"
         },
         {
             value: 2500,
             color: "#FDB45C",
             highlight: "#FFC870",
-            label: "Yellow"
+            label: "Current Amount"
         }
-      ],
+      ], 
       "chartOptions": []
     }
   },
