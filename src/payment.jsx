@@ -1,30 +1,6 @@
 var React = require('react');
 
 module.exports = React.createClass({
-  getInitialState: function(data) {
-
-      return {}
-    
-  },
-
-  componentWillMount: function() {
-    //var data = this.props.paymentData;
-    this.loadPaymentInfo();
-  },
-
-  loadPaymentInfo: function(){
-
-      {this.props.paymentData.map(function(account){
-        if(account.AccountNumber === this.props.acctno)
-        {
-          this.setState({
-            paymentAmt:account.Payments.paymentAmount, 
-            paymentDate:account.Payments.paymentDate});
-        }
-      }.bind(this)
-      )}
-
-  },
   render: function() {
     var paymentsPanelStyle = {
       height: "190px", 
@@ -40,8 +16,8 @@ module.exports = React.createClass({
         <div className="panel-body">
             <div>
               <center>
-                  <text>Payment Due: <br/> <small> due </small></text><span>{this.state.paymentDate}</span><br/>
-                  <text>Payment Due Amount:</text><br/><span>{this.state.paymentAmt}</span>
+                  <text>Payment Due: <br/> <small> due </small></text><span>{this.props.displayData.paymentDate}</span><br/>
+                  <text>Payment Due Amount:</text><br/><span>{this.props.displayData.paymentAmount}</span>
               </center>
             </div>
         </div>

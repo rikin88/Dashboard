@@ -25,7 +25,7 @@ var PageHeader = React.createClass({
         <LeftSide jsonData={DashBoardData} />
         </div>
         <div className="col-sm-10 col-md-6">
-        <Dashboard jsonData={DashBoardData} podStyleInfo="infoPods"/>
+        <Dashboard jsonData={DashBoardData}/>
         </div>
       </div>
 
@@ -41,9 +41,9 @@ var PageHeader = React.createClass({
 
   // React, please render this class
 
-  var element = React.createElement(WelcomePage, options);
+  //var element = React.createElement(WelcomePage, options);
 
 
   // React, after you render this class, please place it in my body tag
-  ReactDOM.render(element, document.getElementById('container'));
+  ReactDOM.render(<WelcomePage />, document.getElementById('container'));
 

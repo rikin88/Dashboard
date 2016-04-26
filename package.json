@@ -19,6 +19,7 @@
     "gulp-watch": "^4.3.5",
     "node-notifier": "^4.5.0",
     "react": "^0.14.8",
+    "react-bootstrap": "^0.29.2",
     "react-chartjs": "^0.7.3",
     "react-dom": "^0.14.8",
     "reactify": "^1.1.1",

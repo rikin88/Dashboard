@@ -5,6 +5,9 @@ var PieChart = require('react-chartjs').Pie;
 module.exports = React.createClass({
 
   getInitialState: function() {
+    //console.log('inCreditSummary selected index' + this.props.selectedIndex);
+    //console.log('displayData ' + this.props.displayData.CreditSummary);
+
     return {
       "chartData": [
         {
@@ -30,24 +33,6 @@ module.exports = React.createClass({
     }
   },
 
-  componentWillMount: function() {
-    //var data = this.props.paymentData;
-    this.loadCreditInfo();
-  },
-
-  loadCreditInfo: function(){
-    
-      {this.props.creditInfo.map(function(account){
-        if(account.AccountNumber === this.props.acctno)
-        {
-          this.setState({
-            creditLimit:account.CreditSummary.CreditLimit, 
-            currentBal:account.CreditSummary.CurrentBalance,
-            availableCredit:account.CreditSummary.AvailableCredit});
-            }
-        }.bind(this)
-      )}
-  },
   render: function() {
     return (
     <div className="col-sm-12">
@@ -61,20 +46,14 @@ module.exports = React.createClass({
           </div>
           <div>
              <center>
-                  <text>Credit Limit:</text><br/><span>{this.state.creditLimit}</span><br/>
-                  <text>Available Balance:</text><br/><span>{this.state.availableCredit}</span><br/>
-                  <text>Current Amount:</text><br/><span>{this.state.currentBal}</span>
+                  <text>Credit Limit:</text><br/><span>{this.props.displayData.CreditLimit}</span><br/>
+                  <text>Available Balance:</text><br/><span>{this.props.displayData.AvailableCredit}</span><br/>
+                  <text>Current Amount:</text><br/><span>{this.props.displayData.CurrentBalance}</span>
               </center>
           </div>
         </div>
       </div>
       </div>
     );
-  }
-});
-
-var ListItemWrapper = React.createClass({
-  render: function() {
-    return <li>{this.props.data}</li>;
   }
 });
