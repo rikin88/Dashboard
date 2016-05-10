@@ -3,14 +3,6 @@
     {
       "actionText": "3 New Files for Download",
       "actionURL": "https://www.google.com/"
-    },
-    {
-      "actionText": "2 New Files for Download",
-      "actionURL": "https://portal.jpmchase.net/"
-    },
-    {
-      "actionText": "4 New Files for Download",
-      "actionURL": "https://www.yahoo.com/"
     }
   ],
   "Alerts": [
@@ -66,12 +58,12 @@
       "CardType": "Purchasing",
       "AccountStatus": "New",
       "CreditSummary": {
-        "CreditLimit": "$10000.00",
-        "CurrentBalance": "$2,500",
-        "AvailableCredit": "$7,500"
+        "CreditLimit": "10000.00",
+        "CurrentBalance": "2500.00",
+        "AvailableCredit": "7500.00"
       },
       "Payments": {
-        "paymentAmount": "$200.00",
+        "paymentAmount": "200.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -80,7 +72,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "5",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$4600",
+        "transactionAmount": "4600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "3",
         "activityURL2": "https://www.google.com/",
@@ -96,7 +88,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$5000.00"
+        "statementBalance": "5000.00"
       }
     },
     {
@@ -107,12 +99,12 @@
       "CardType": "Commercial",
       "AccountStatus": "Active",
       "CreditSummary": {
-        "CreditLimit": "$20000.00",
-        "CurrentBalance": "$3500",
-        "AvailableCredit": "$16,500"
+        "CreditLimit": "20000.00",
+        "CurrentBalance": "15000.00",
+        "AvailableCredit": "5000.00"
       },
       "Payments": {
-        "paymentAmount": "$200.00",
+        "paymentAmount": "200.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -121,7 +113,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$1280",
+        "transactionAmount": "1280",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -137,7 +129,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$5000.00"
+        "statementBalance": "5000.00"
       }
     },
     {
@@ -148,12 +140,12 @@
       "CardType": "Purchase",
       "AccountStatus": "New",
       "CreditSummary": {
-        "CreditLimit": "$10,000.00",
-        "CurrentBalance": "$3,500 0",
-        "AvailableCredit": "$6,500"
+        "CreditLimit": "10000.00",
+        "CurrentBalance": "3500.00",
+        "AvailableCredit": "6500.00"
       },
       "Payments": {
-        "paymentAmount": "$500.00",
+        "paymentAmount": "500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -162,7 +154,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$1600",
+        "transactionAmount": "1600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -178,7 +170,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$2000.00"
+        "statementBalance": "2000.00"
       }
     },
     {
@@ -189,12 +181,12 @@
       "CardType": "Purchase",
       "AccountStatus": "Active",
       "CreditSummary": {
-        "CreditLimit": "$50,000.00",
-        "CurrentBalance": "$9,500 0",
-        "AvailableCredit": "$41,500"
+        "CreditLimit": "50000.00",
+        "CurrentBalance": "9500.00",
+        "AvailableCredit": "41500.00"
       },
       "Payments": {
-        "paymentAmount": "$500.00",
+        "paymentAmount": "500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -203,7 +195,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$6600",
+        "transactionAmount": "6600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -219,7 +211,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$20,000.00"
+        "statementBalance": "20,000.00"
       }
     },
     {
@@ -230,12 +222,12 @@
       "CardType": "Purchase",
       "AccountStatus": "Active",
       "CreditSummary": {
-        "CreditLimit": "$9,000.00",
-        "CurrentBalance": "$1,500",
-        "AvailableCredit": "$8,000"
+        "CreditLimit": "9000.00",
+        "CurrentBalance": "1500.00",
+        "AvailableCredit": "8000.00"
       },
       "Payments": {
-        "paymentAmount": "$1,500.00",
+        "paymentAmount": "1,500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -244,7 +236,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$1,600",
+        "transactionAmount": "1,600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -260,7 +252,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$3,000.00"
+        "statementBalance": "3,000.00"
       }
     },
     {
@@ -271,12 +263,12 @@
       "CardType": "Commercial",
       "AccountStatus": "New",
       "CreditSummary": {
-        "CreditLimit": "$4,000.00",
-        "CurrentBalance": "$1,500",
-        "AvailableCredit": "$2,500"
+        "CreditLimit": "4000.00",
+        "CurrentBalance": "1500.00",
+        "AvailableCredit": "2500.00"
       },
       "Payments": {
-        "paymentAmount": "$1,500.00",
+        "paymentAmount": "1,500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -285,7 +277,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$600",
+        "transactionAmount": "600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -301,7 +293,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$1,000.00"
+        "statementBalance": "1,000.00"
       }
     },
     {
@@ -312,12 +304,12 @@
       "CardType": "Commercial",
       "AccountStatus": "New",
       "CreditSummary": {
-        "CreditLimit": "$12,000.00",
-        "CurrentBalance": "$4,000",
-        "AvailableCredit": "$8,000"
+        "CreditLimit": "12000.00",
+        "CurrentBalance": "4000.00",
+        "AvailableCredit": "8000.00"
       },
       "Payments": {
-        "paymentAmount": "$1,500.00",
+        "paymentAmount": "1,500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -326,7 +318,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$3,000",
+        "transactionAmount": "3,000",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -342,7 +334,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$3,000.00"
+        "statementBalance": "3,000.00"
       }
     },
     {
@@ -353,12 +345,12 @@
       "CardType": "Commercial",
       "AccountStatus": "New",
       "CreditSummary": {
-        "CreditLimit": "$2,000.00",
-        "CurrentBalance": "$1,000",
-        "AvailableCredit": "$1,000"
+        "CreditLimit": "2000.00",
+        "CurrentBalance": "1000.00",
+        "AvailableCredit": "1000.00"
       },
       "Payments": {
-        "paymentAmount": "$500.00",
+        "paymentAmount": "500.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -367,7 +359,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$600",
+        "transactionAmount": "600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -383,7 +375,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$1,000.00"
+        "statementBalance": "1,000.00"
       }
     },
     {
@@ -394,12 +386,12 @@
       "CardType": "Commercial",
       "AccountStatus": "Active",
       "CreditSummary": {
-        "CreditLimit": "$20,000.00",
-        "CurrentBalance": "$10,000",
-        "AvailableCredit": "$10,000"
+        "CreditLimit": "20000.00",
+        "CurrentBalance": "10000.00",
+        "AvailableCredit": "10000.00"
       },
       "Payments": {
-        "paymentAmount": "$5,000.00",
+        "paymentAmount": "5,000.00",
         "paymentDate": "Apr 12, 2016",
         "paymentText": "Make a Payment",
         "paymentURL": "https://www.yahoo.com/"
@@ -408,7 +400,7 @@
         "activityText1": "Recent Transactions",
         "activityCount1": "6",
         "activityURL1": "https://www.google.com/",
-        "transactionAmount": "$4,600",
+        "transactionAmount": "4,600",
         "activityText2": "Transactions Pending Review",
         "activityCount2": "4",
         "activityURL2": "https://www.google.com/",
@@ -424,7 +416,7 @@
         "activityText6": "Last Statement",
         "activityURL6": "https://www.google.com/",
         "lastStatementDate": "Mar 12, 2016",
-        "statementBalance": "$10,000.00"
+        "statementBalance": "10,000.00"
       }
     }
   ]

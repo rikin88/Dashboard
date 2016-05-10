@@ -12,20 +12,36 @@ var MenuItem = require('react-bootstrap').MenuItem;
 
 module.exports = React.createClass({
   getInitialState : function() {
-    //console.log("Dashboard initial state: " + this.props.jsonData.Accounts[0].AccountNumber);
-    //console.log("Dashboard initial state: " + this.props.jsonData.Accounts[0].CreditSummary.CreditLimit);
-    console.log("Dashboard initial state: " + this.props.jsonData.Accounts[0].TransactionActivity.activityCount1);
     return {
       "accountNum" : this.props.jsonData.Accounts[0].AccountNumber,
       "index": 0,
       "creditSummary": this.props.jsonData.Accounts[0].CreditSummary,
       "transactionSummary": this.props.jsonData.Accounts[0].TransactionActivity,
-      "paymentSummary": this.props.jsonData.Accounts[0].Payments
+      "paymentSummary": this.props.jsonData.Accounts[0].Payments,
+      "chartData": [
+        {
+            value: this.props.jsonData.Accounts[0].CreditSummary.CreditLimit,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Credit Limit"
+        },
+        {
+            value: this.props.jsonData.Accounts[0].CreditSummary.AvailableCredit,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Available Balance"
+        },
+        {
+            value: this.props.jsonData.Accounts[0].CreditSummary.CurrentBalance,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Current Amount"
+        }
+      ]
     };
   },
 
   updateState: function(item) {
-    //console.log('entering here!!!' + item);
     var index = -1;
     var data = this.props.jsonData.Accounts;
 
@@ -40,26 +56,40 @@ module.exports = React.createClass({
     var creditSummary = data[i].CreditSummary;
     var transactionSummary = data[i].TransactionActivity;
     var paymentSummary = data[i].Payments;
-    //console.log('test1 ' + creditSummary.CreditLimit);
-    //console.log('index in dashboard: ' + index);
-    console.log('test3  updateState' + transactionSummary.activityCount1);
+
     this.setState({
       "accountNum": item,
       "index" : index,
       "creditSummary" : creditSummary,
       "transactionSummary" : transactionSummary,
-      "paymentSummary" : paymentSummary
+      "paymentSummary" : paymentSummary,
+      "chartData" : [
+        {
+            value: this.props.jsonData.Accounts[index].CreditSummary.CreditLimit,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Credit Limit"
+        },
+        {
+            value: this.props.jsonData.Accounts[index].CreditSummary.AvailableCredit,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Available Balance"
+        },
+        {
+            value: this.props.jsonData.Accounts[index].CreditSummary.CurrentBalance,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Current Amount"
+        }
+      ],
     });
-    //console.log("updated state in dashboard : " + this.state.accountNum);
-  },
-
-  componentDidMount: function() {
-    //console.log('component did mount: ' + this.state.accountNum);
   },
 
   render: function() {
+
     var dashboardStyle = {
-      height: "820px", 
+      height: "780px", 
       backgroundColor: "white" 
     };
 
@@ -68,9 +98,9 @@ module.exports = React.createClass({
       backgroundColor: "white"
     };
 
-    var accountNum = this.state.accountNum;
-
-    //console.log('test 2 ' + this.state.creditSummary.CreditLimit);
+    var marginStyle = {
+      marginBottom: "15px"
+    };
 
     return (
     <div>
@@ -80,12 +110,13 @@ module.exports = React.createClass({
         </div>
         <div className="panel-body">
 
-          <div className="row">
-             <AccountSelector selectedIndex={this.state.index} dashboardCallback={this.updateState} jsonData={this.props.jsonData.Accounts}  />
+          <div className="row" >
+             <AccountSelector selectedIndex={this.state.index} dashboardCallback={this.updateState} jsonData={this.props.jsonData.Accounts} style={marginStyle}  />
+             <hr/>  
           </div>
 
           <div className="row"> 
-            <CreditSummary displayData={this.state.creditSummary} selectedIndex={this.state.index} style={genericStyle}/> 
+            <CreditSummary chartData={this.state.chartData} displayData={this.state.creditSummary} selectedIndex={this.state.index} style={genericStyle}/> 
             
           </div>
 

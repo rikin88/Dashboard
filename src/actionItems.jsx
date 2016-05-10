@@ -1,12 +1,17 @@
 var React = require('react');
 
 module.exports = React.createClass({
+
   render: function() {
+    var actionItemsStyle = {
+      height: "145px",
+      backgroundColor: "white"
+    };
 
     return (
-    <div className="col-sm-6">
+    <div className="col-sm-6" style={actionItemsStyle}>
       <div className="panel panel-info">
-        <div className="panel-heading">
+        <div className="panel-heading" >
           <h3 className="panel-title">Items Awaiting Your Action</h3>
         </div>
         <div className="panel-body">
